@@ -1,1 +1,1 @@
-要开始一段新的java了
+A new journey is about to begin.
