@@ -29,4 +29,4 @@ Please ⭐️ this repo and share it with others
 If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
 If you find any issue just put it in the repository issue section, thank you.
 
-#### And thanks for this [project](https://github.co	m/HouariZegai/Calculator).
+#### And thanks for this [project](https://github.com/HouariZegai/Calculator).
