@@ -20,15 +20,12 @@ public class Calculator {
             btnAdd, btnPoint, btn0, btnEqual, btnRoot, btnPower, 
             btnLog, btnSwitchThemes, btnSwitchToScientificMode;
     private char opt = ' '; // Save the operator
-    private boolean go = true; // For calculate with Opt !	= (=) // true：能够执行该运算符的计算
+    private boolean go = true; // For calculate with Opt !	= (=) // true：确保操作符不为‘=’,表示刚刚输入的为数字，接下来可输入运算符
     private boolean addWrite = true; // Digital zoom in the display // true：前为数字，可继续追加数字
     private double val = 0; // Save value typed for calculation
     private boolean isToggleColorSelected = false;//Change the themes
     private boolean isScientificMode = false;//Change the mode
-    //实现的是每得到一个操作符便对它前面的数字进行处理
-    //而等于号则不用记录符号了，较其他的操作符而言比较便捷
     
-    //此处布局为null，自定义方便实现科学计算的布局排列
     
 
     private Calculator() {
@@ -532,7 +529,6 @@ public class Calculator {
         } else if (opt == '^') {
             return Math.pow(x, y);
         }
-        //inText.setFont(inText.getFont().deriveFont(Font.PLAIN));//删除可视化效果，交互性更好，
         return y;
     }
 
