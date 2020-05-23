@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.lang.Math;
 
 public class Calculator {
-    
+
     private static final int WINDOW_WIDTH = 410;
     private static final int WINDOW_HEIGHT = 600;
     private static final int BUTTON_WIDTH = 80; 
@@ -34,8 +34,8 @@ public class Calculator {
         window.setLocationRelativeTo(null); // Move Window To Center
 
         // Button fonts
-        Font btnFont = new Font("Comic Sans MS", Font.PLAIN, 28);//input
-        Font smallTxtBtnFont = new Font("Comic Sans MS", Font.PLAIN, 24);//result
+        Font btnFont = new Font("Comic Sans MS", Font.PLAIN, 28);//result
+        Font smallTxtBtnFont = new Font("Comic Sans MS", Font.PLAIN, 24);//intput
 
         btnSwitchThemes = new JButton();
         btnSwitchThemes.setBounds(230, 30, 140, 18);
@@ -73,7 +73,7 @@ public class Calculator {
         btnC.addActionListener(event -> {
             repaintFont();//切换为普通的字体显示，与结果字体不同(有效的时刻是在于计算出结果后进行该按钮的操作）
             inText.setText("0");
-            opt = ' ';
+            opt = ' '; 
             val = 0;
         });
         window.add(btnC);
