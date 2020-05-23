@@ -20,8 +20,8 @@ public class Calculator {
             btnAdd, btnPoint, btn0, btnEqual, btnRoot, btnPower, 
             btnLog, btnSwitchThemes, btnSwitchToScientificMode;
     private char opt = ' '; // Save the operator
-    private boolean go = true; // For calculate with Opt !	= (=) // true：确保操作符不为‘=’,表示刚刚输入的为数字，接下来可输入运算符
-    private boolean addWrite = true; // Digital zoom in the display // true：前为数字，可继续追加数字
+    private boolean go = true; //表示可以继续输入数字继续进行计算
+    private boolean addWrite = true; // Digital zoom in the display // true：前为数字，可继续追加数字构成多位数
     private double val = 0; // Save value typed for calculation
     private boolean isToggleColorSelected = false;//Change the themes
     private boolean isScientificMode = false;//Change the mode
